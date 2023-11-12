@@ -87,15 +87,20 @@ body {
     letter-spacing: 0.02em;
 }
 .section-hedder {
+    color:#2e2f42;
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    text-align: center
 }
 .team-card {
     justify-content: center;
     background: var(--WHITE, #FFF);
+}
+.card-background {
+    color:#2e2f42;
 }
 .mame-card {
     font-size: 20px;
@@ -146,4 +151,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+}
+.third-section {
+    background-color: #F4F4FD
 }
