@@ -17,21 +17,21 @@ body {
 .body-background {
     background-color: #FFFFFF;
 }
-.logo {
-    color: var(--NAVY-BLUE, #4d5ae5);
-    font-family: Raleway,sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
 .logo-web {
     color: var(--IRIS, #4D5AE5);
     font-family: Raleway,sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.logo-studio {
+    color: var(--NAVY-BLUE, #2e2f42);
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
