@@ -88,9 +88,9 @@ body {
 }
 .section-hedder {
     color:#2e2f42;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.11;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     text-align: center
@@ -154,4 +154,7 @@ body {
 }
 .third-section {
     background-color: #F4F4FD
+}
+.list-item {
+    background-color: #FFFFFF
 }
