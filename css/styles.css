@@ -88,9 +88,9 @@ body {
 }
 .section-hedder {
     color:#2e2f42;
-    font-size: 20px;
+    font-size: 36px;
     font-weight: 500;
-    line-height: 1.2;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     text-align: center
@@ -157,4 +157,11 @@ body {
 }
 .list-item {
     background-color: #FFFFFF
+}
+.name-card {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color:#2e2f42;
 }
