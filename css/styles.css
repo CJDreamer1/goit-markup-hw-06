@@ -34,7 +34,7 @@ img {
 /* ====/Common styles================================================================================== */
 body {
     font-family: 'Roboto', sans-serif;
-    color: #434455
+    color: #434455;
 }
 .page-header {
     border-bottom: 1px solid #e7e9fc;
@@ -112,6 +112,8 @@ body {
     line-height: 1.5;
     letter-spacing: 0.04em;
     display: block;
+    margin-left:auto;
+    margin-right:auto;
     min-width: 169px;
     height: 56px;
     border: none;
@@ -119,7 +121,7 @@ body {
 }
 .button-changing-color:hover,
 .button-changing-color:focus {
-    background-color: #404BBF
+    background-color: #404BBF;
 }
 .advantages-text {
     font-size: 16px;
@@ -230,7 +232,7 @@ body {
     margin-bottom: 8px;
 }
 .footer-studio {
-    color: #f4f4fd
+    color: #f4f4fd;
 }
 /* page navigation========================================================================== */
 .page-navigation{
@@ -247,7 +249,7 @@ body {
 }
 .adress-container {
     display: flex;
-    column-gap: 40px;
+    gap: 40px;
 }
 .width-restriction {
     max-width: 496px;
@@ -255,10 +257,9 @@ body {
     margin-right: auto;
     margin-bottom: 48px;
     padding-top: 118px;
-    padding-bottom: 292px;
 }
 .header-underscore {
-    border-bottom: 1px solid #e7e9fc
+    border-bottom: 1px solid #e7e9fc;
 }
 .advantages-list {
     padding: 120px 0;
