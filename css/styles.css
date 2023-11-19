@@ -212,7 +212,7 @@ body {
     margin-bottom: 8px;
 }
 .advantages-text {
-    
+
 }
 .footer-studio {
     color: #f4f4fd
@@ -265,4 +265,8 @@ body {
 }
 .advantages-list-item {
     width: calc((100% - 72px) / 4);
+}
+.ul-container {
+    display: flex;
+    gap: 24px;
 }
