@@ -307,6 +307,8 @@ padding: 32px 0;
     display: flex;
     justify-content: center;
     gap: 24px;
+    padding-top: 14px;
+    
 }
 .social-link-element {
     width: 40px;
@@ -326,6 +328,7 @@ padding: 32px 0;
     height: 16px;
     fill:#F4F4FD;
 }
-.social-link-item:hover {
+.social-link-item:hover,
+.social-link-item:focus {
     background-color: #404bbf;
 }
