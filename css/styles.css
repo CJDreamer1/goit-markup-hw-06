@@ -303,3 +303,29 @@ padding: 32px 0;
     border: 1px solid #e7e9fc;
     border-top: none;
 }
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.social-link-element {
+    width: 40px;
+    height: 40px;
+}
+.social-link-item {
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-list-icon {
+    width: 16px;
+    height: 16px;
+    fill:#F4F4FD;
+}
+.social-link-item:hover {
+    background-color: #404bbf;
+}
