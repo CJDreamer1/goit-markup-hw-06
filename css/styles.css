@@ -409,6 +409,7 @@ padding: 32px 0;
 }
 .footer-links {
     display: flex;
+    align-items: baseline;
 }
 .footer-paragraph {
     font-weight: 500;
