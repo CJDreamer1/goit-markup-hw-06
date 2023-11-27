@@ -278,7 +278,7 @@ body {
     color: #404bbf;
 }
 .header-underline::after {
-    content:" ";
+    content:"";
     position: absolute;
     left: 0;
     bottom: -1px;
