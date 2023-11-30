@@ -113,6 +113,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     max-width: 1440px;
+    margin:auto;
 }
 .button {
     background:#4D5AE5;
