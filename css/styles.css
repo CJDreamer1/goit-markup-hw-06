@@ -553,6 +553,8 @@ body {
     background-color: #FCFCFC;
     border-radius: 4px;
     padding: 72px 24px 24px 24px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn {
@@ -561,17 +563,23 @@ body {
     right: 24px;
     padding: 0;
     background-color: #E7E9FC;
-    border: 1px solid #2E2F42;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     fill: #2E2F42;
     line-height: 0;
     border-radius: 50%;
     width: 24px;
     height: 24px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-close-btn-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close-btn:hover,
 .modal-close-btn:focus {
-    fill: #F4F4FD;
+    fill: #ffffff;
     background-color: #404BBF;
     border: 0;
 }
@@ -606,7 +614,7 @@ body {
     font-weight: 400;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 .review-form-input-icon {
     position: absolute;
@@ -636,6 +644,7 @@ body {
     resize: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     outline: 0px solid transparent;
+    background-color: transparent;
 }
 .review-form-comment::placeholder {
     font-family: Roboto;
@@ -654,10 +663,13 @@ body {
     border-radius: 2px;
     cursor: pointer;
     margin-right: 8px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: transparent;
 }
 .review-form-checkbox:checked + .review-form-checkbox-label > .review-form-own-checkbox {
     background-color: #404BBF;
-    border-color: #404BBF;
+    border: none;
+    fill: #F4F4FD;
 }
 .review-form-own-checkbox-icon {
     fill: #FFFFFF;
@@ -688,7 +700,7 @@ body {
     margin-bottom: 24px;
 }
 .review-form-submit-btn {
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     cursor: pointer;
     color: #FFFFFF;
@@ -698,10 +710,16 @@ body {
     margin-right: auto;
     border-radius: 4px;
     border-color: #4D5AE5;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
     border: none;
 }
 .review-form-submit-btn:hover,
 .review-form-submit-btn:focus { 
     background-color: #404BBF;
+}
+.review-form-field-margin {
+    margin-bottom: 16px;
 }
 /*============================================== /Modal window styles =======================================*/
