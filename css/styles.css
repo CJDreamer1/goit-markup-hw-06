@@ -243,7 +243,7 @@ body {
     min-height: 623px;
     background-color: #FCFCFC;
     border-radius: 4px;
-    padding: 72px 24px 24px 24px;
+    padding: 72px 17px 24px 16px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -366,15 +366,14 @@ body {
 .mobile-review-form-checkbox-wrapper {
     margin-bottom: 24px;
 }
-.mobile-review-form-checkbox-wrapper {
-    margin-bottom: 24px;
-}
 .mobile-review-form-checkbox-label {
     color: var(--LIGHT-SLATE, #8E8F99);
     font-size: 12px;
     font-weight: 400;
     line-height: 1.17;
     letter-spacing: 0.04em;
+    width: 231px;
+    flex-shrink: 0;
 }
 .review-form-own-checkbox {
     display: inline-flex;
@@ -445,8 +444,9 @@ body {
     .mobile-review-form-checkbox:checked+.mobile-review-form-checkbox-label .mobile-review-form-own-checkbox-icon {
     opacity: 1;
 }
-/* ========================================== / MOBILE BACKDROP STYLES ======================================= */
 }
+/* ========================================== / MOBILE BACKDROP STYLES ======================================= */
+
 /* ========================================== /MOBILE HEADER STYLES ========================================== */
 @media screen and (min-width: 768px) {
 .container {
