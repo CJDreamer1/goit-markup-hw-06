@@ -182,7 +182,7 @@ body {
 .mobile-contacts-list-item {
     color: #434455;
 }
-.mobile-contacts-list-item:hover
+.mobile-contacts-list-item:hover,
 .mobile-contacts-list-item:focus {
     color:#4D5AE5;
 }
@@ -214,6 +214,238 @@ body {
 .social-link-item:hover,
 .social-link-item:focus {
     background-color: #404bbf;
+}
+/* ========================================== MOBILE BACKDROP STYLES ======================================== */
+.mobile-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+ .mobile-backdrop.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+ }
+ .mobile-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 288px;
+    min-height: 623px;
+    background-color: #FCFCFC;
+    border-radius: 4px;
+    padding: 72px 24px 24px 24px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-modal-close-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    padding: 0;
+    background-color: #E7E9FC;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    fill: #2E2F42;
+    line-height: 0;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mobile-modal-close-btn-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-modal-close-btn:hover,
+.mobile-modal-close-btn:focus {
+    fill: #ffffff;
+    background-color: #404BBF;
+    border: 0;
+}
+.mobile-preview-form-descroption {
+    color: var(--NAVY-BLUE, #2E2F42);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+}
+.mobile.preview-form-descroption {
+    color: var(--NAVY-BLUE, #2E2F42);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+}
+.mobile-review-form-field-wrapper {
+    margin-bottom: 8px;
+}
+.mobile-review-form-field-label {
+    display: block;
+    color: var(--LIGHT-SLATE, #8E8F99);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    margin-bottom: 4px;
+}
+.mobile-review-form-input-wrapper {
+    position: relative;
+}
+.mobile-review-form-input {
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #2E2F4266;
+    padding-left: 38px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: 0px solid transparent;
+    background-color: transparent;
+}
+.mobile-review-form-input:focus {
+    border-color: #4D5AE5;
+}
+.mobile-review-form-input-icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    fill: #2E2F42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-review-form-input:focus+.mobile-review-form-input-icon {
+    fill: #4D5AE5;
+}
+.mobile-review-form-field-margin {
+    margin-bottom: 16px;
+}
+.mobile-review-form-field-label {
+    display: block;
+    color: var(--LIGHT-SLATE, #8E8F99);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    margin-bottom: 4px;
+}
+.mobile-review-form-comment {
+    width: 100%;
+    height: 120px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    border-radius: 4px;
+    color: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+    border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+    padding: 8px 16px;
+    resize: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: 0px solid transparent;
+    background-color: transparent;
+}
+.mobile-review-form-comment::placeholder {
+    font-family: Roboto;
+    color: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+}
+.mobile-review-form-checkbox-wrapper {
+    margin-bottom: 24px;
+}
+.mobile-review-form-checkbox-wrapper {
+    margin-bottom: 24px;
+}
+.mobile-review-form-checkbox-label {
+    color: var(--LIGHT-SLATE, #8E8F99);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+}
+.review-form-own-checkbox {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #2E2F4266;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: transparent;
+}
+.mobile-review-form-own-checkbox-icon {
+    fill: #FFFFFF;
+    opacity: 0;
+}
+.mobile-conditions {
+    color: var(--IRIS, #4D5AE5);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-decoration-line: underline;
+}
+.mobile-review-form-submit-btn {
+    min-width: 169px;
+    height: 56px;
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: #4D5AE5;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    border-color: #4D5AE5;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    border: none;
+}
+.mobile-review-form-comment:focus {
+    border-color: #4D5AE5;
+}
+.mobile-review-form-own-checkbox {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #2E2F4266;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: transparent;
+}
+.mobile-review-form-own-checkbox-icon {
+    fill: #FFFFFF;
+    opacity: 0;
+}
+.mobile-review-form-checkbox:checked+.mobile-review-form-checkbox-label>.mobile-review-form-own-checkbox {
+    background-color: #404BBF;
+    border: none;
+    fill: #F4F4FD;
+}
+    .mobile-review-form-checkbox:checked+.mobile-review-form-checkbox-label .mobile-review-form-own-checkbox-icon {
+    opacity: 1;
+}
+/* ========================================== / MOBILE BACKDROP STYLES ======================================= */
 }
 /* ========================================== /MOBILE HEADER STYLES ========================================== */
 @media screen and (min-width: 768px) {
