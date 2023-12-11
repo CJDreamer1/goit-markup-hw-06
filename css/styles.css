@@ -90,7 +90,7 @@ body {
 /* ========================================== MOBILE HEADER STYLES ========================================== */
 
 .container { 
-    max-width: 288px;
+    max-width: 320px;
     padding-right: 16px;
     padding-left: 16px;
     margin-left: auto;
@@ -115,8 +115,8 @@ body {
     text-transform: uppercase;
 }
 .page-header {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .div-container {
     display: flex;
@@ -131,6 +131,7 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 120px;
 }
 @media screen and (max-width: 767px) {
 .mobile-menu-open-btn {
@@ -156,6 +157,7 @@ body {
     transform: translateX(0%);
 }
 .mobile-menu-link {
+    display: block;
     color: var(--NAVY-BLUE, #2E2F42);
     font-size: 36px;
     font-weight: 700;
@@ -215,6 +217,7 @@ body {
 .social-link-item:focus {
     background-color: #404bbf;
 }
+}
 /* ========================================== MOBILE BACKDROP STYLES ======================================== */
 .mobile-backdrop {
     position: fixed;
@@ -229,11 +232,13 @@ body {
     pointer-events: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
  .mobile-backdrop.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
  }
+ 
  .mobile-modal {
     position: absolute;
     top: 50%;
@@ -247,6 +252,7 @@ body {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .mobile-modal-close-btn {
     position: absolute;
     top: 24px;
@@ -444,6 +450,61 @@ body {
     .mobile-review-form-checkbox:checked+.mobile-review-form-checkbox-label .mobile-review-form-own-checkbox-icon {
     opacity: 1;
 }
+.welcome-card-background {
+    background-color: #2E2F42;
+    padding: 72px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/tel-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+@media screen and (min-resolution: 192dpi) {
+.welcome-card-background {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/tel-bg@2x.jpg);
+}
+}
+.welcome-card {
+    color: var(--WHITE, #FFF);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.12;
+    letter-spacing: 0.02em;
+}
+.width-restriction {
+    max-width: 288px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 72px;
+}
+.button {
+    background: #4D5AE5;
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+}
+.button-changing-color:hover,
+.button-changing-color:focus {
+    background-color: #404BBF;
+}
+.logo {
+    color: #4d5ae5;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 /* ========================================== / MOBILE BACKDROP STYLES ======================================= */
 
@@ -461,12 +522,88 @@ body {
 }
 .menu {
     display: flex;
+    gap: 40px;
+}
+.menu-link {
+    display: block;
+    color: var(--NAVY-BLUE, #2e2f42);
+    font-family: Roboto;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    gap: 40px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-underline {
+    position: relative;
+    color: #404bbf;
+}
+
+.header-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    width: 100%;
+    background-color: #404bbf;
+    border-radius: 2px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list {
     display: flex;
 }
-.menu {
-    display: flex;
+.contacts-straight {
+    font-style: normal;
+    gap: 40px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-modal {
+    width: 408px;
+    height: 584px;
+    padding: 72px 25px 24px 23px;
+}
+.width-restriction {
+    max-width: 496px;
+    min-height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.welcome-card-background {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/tablet-bg.jpg);
+}
+
+@media screen and (min-resolution: 192dpi) {
+    .welcome-card-background {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/tablet-bg@2x.jpg);
+    }
+}
+.contacts-straight {
+    display: inline-flex;
+}
+.container {
+    padding-right: 0;
+    padding-left: 0;
+}
+.contacts {
+    font-family: Roboto;
+    font-size: 12px;
+    color: var(--SLATE, #434455);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-transform: lowercase;
+}
+.header-underscore {
+    border-bottom: 1px solid #e7e9fc;
+}
+.welcome-card {
+    font-size: 56px;
+    width: 496px;
+    margin-bottom: 36px;
 }
 /* ========================================== /TABLET HEADER STYLES ========================================== */
 }

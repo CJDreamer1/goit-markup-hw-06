@@ -353,8 +353,9 @@ body {
 
 .width-restriction {
     max-width: 496px;
-    margin-left: auto;
-    margin-right: auto;
+    height: 120px;
+    margin-left: 136px;
+    margin-right: 136px;
     margin-bottom: 48px;
 }
 
