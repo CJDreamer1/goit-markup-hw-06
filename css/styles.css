@@ -115,8 +115,9 @@ body {
     text-transform: uppercase;
 }
 .page-header {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e7e9fc;
 }
 .div-container {
     display: flex;
@@ -181,12 +182,20 @@ body {
     letter-spacing: 0.02em;
     margin-bottom: 48px;
 }
+
 .mobile-contacts-list-item {
     color: #434455;
 }
 .mobile-contacts-list-item:hover,
 .mobile-contacts-list-item:focus {
     color:#4D5AE5;
+}
+.team-card {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    align-items: center;
+}
 }
 .social-links {
     display: flex;
@@ -217,7 +226,7 @@ body {
 .social-link-item:focus {
     background-color: #404bbf;
 }
-}
+
 /* ========================================== MOBILE BACKDROP STYLES ======================================== */
 .mobile-backdrop {
     position: fixed;
@@ -450,6 +459,8 @@ body {
     .mobile-review-form-checkbox:checked+.mobile-review-form-checkbox-label .mobile-review-form-own-checkbox-icon {
     opacity: 1;
 }
+
+/* ========================================== / MOBILE BACKDROP STYLES ======================================= */
 .welcome-card-background {
     background-color: #2E2F42;
     padding: 72px 0;
@@ -459,6 +470,7 @@ body {
     background-position: center;
     max-width: 1440px;
     margin: 0 auto;
+    margin-bottom: 96px;
 }
 @media screen and (min-resolution: 192dpi) {
 .welcome-card-background {
@@ -506,8 +518,85 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
-/* ========================================== / MOBILE BACKDROP STYLES ======================================= */
+.advantages-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.advantages-items {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.ul-container {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+.section-hedder {
+    color: #2e2f42;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.12;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 72px;
+}
+.third-section {
+    background-color: #F4F4FD;
+    padding: 96px 0;
+}
+.container {
+    margin-bottom: 96px;
+}
+.name-card {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    text-align: center;
+    margin-bottom: 8px;
+}
 
+.team-list-item {
+    background-color: #FFFFFF;
+    width: 264px;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.workplace {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+.team-cards-styles {
+    padding: 32px 0;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding-top: 14px;
+}
+.portfolio-item {
+    color: #2e2f42;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
 /* ========================================== /MOBILE HEADER STYLES ========================================== */
 @media screen and (min-width: 768px) {
 .container {
@@ -605,18 +694,69 @@ body {
     width: 496px;
     margin-bottom: 36px;
 }
-/* ========================================== /TABLET HEADER STYLES ========================================== */
+.page-header {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.div-container {
+    margin-top: 24px;
+    padding-bottom: 24px;
+}
+.ul-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 72px 24px;
+}
+.advantages-list-item {
+    width: 356px;
+}
+.team-card {
+    display: flex;
+    gap: 64px 24px;
+    flex-direction: none;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-
-
-@media screen and (min-width: 1158px) {
-    .container {
-        max-width: 1128px;
+}
+@media screen and (max-width: 1157px) {
+    .advantage-picture {
+        display: none;
     }
+}
+/* ========================================== /TABLET HEADER STYLES ========================================== */
 
 /* ========================================== DESKTOP HEADER STYLES ========================================== */
-
-
-/* ========================================== /DESKTOP HEADER STYLES ========================================== */
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+    }
+.advantages-list-item {
+    width: calc((100% - 72px) / 4);
 }
+.advantage-picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+.advantages-text {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.advantages-items {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+
+
+}
+/* ========================================== /DESKTOP HEADER STYLES ========================================== */
