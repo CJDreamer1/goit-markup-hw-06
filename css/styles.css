@@ -495,6 +495,8 @@ body {
     max-width: 288px;
     margin-left: 16px;
     margin-right: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
     margin-bottom: 72px;
 }
 .button {
@@ -558,9 +560,6 @@ body {
 .third-section {
     background-color: #F4F4FD;
     padding: 96px 0;
-}
-.container {
-    margin-bottom: 96px;
 }
 .name-card {
     font-weight: 500;
@@ -656,6 +655,9 @@ body {
     column-gap: 48px;
     row-gap: 48px;
 }
+.welcome-card {
+    text-transform: capitalize;
+}
 /* ========================================== /MOBILE HEADER STYLES ========================================== */
 @media screen and (min-width: 768px) {
 .container {
@@ -718,8 +720,8 @@ body {
     min-height: 120px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 .welcome-card-background {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/tablet-bg.jpg);
@@ -759,7 +761,9 @@ body {
 }
 .div-container {
     margin-top: 24px;
-    padding-bottom: 24px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 .ul-container {
     display: flex;
@@ -781,6 +785,30 @@ body {
 .portfolio-list {
     column-gap: 24px;
 }
+.header-underline {
+    position: relative;
+    color: #404bbf;
+}
+
+.header-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    width: 100%;
+    background-color: #404bbf;
+    border-radius: 2px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-link {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.width-restriction {
+    padding-left: 0;
+    padding-right: 0;
+}
 }
 @media screen and (max-width: 1157px) {
     .advantage-picture {
@@ -790,10 +818,20 @@ body {
 /* ========================================== /TABLET HEADER STYLES ========================================== */
 
 /* ========================================== DESKTOP HEADER STYLES ========================================== */
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1157px) {
     .container {
         max-width: 1158px;
     }
+.welcome-card-background {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/dt-bg.jpg);
+    padding: 188px 0;
+}
+
+@media screen and (min-resolution: 192dpi) {
+    .welcome-card-background {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/dt-bg@2x.jpg);
+    }
+}
 .advantages-list-item {
     width: calc((100% - 72px) / 4);
 }
@@ -822,6 +860,22 @@ body {
 }
 .portfolio-list {
     column-gap: 24px;
+}
+.adress-container {
+    display: flex;
+    gap: 40px;
+}
+.div-container {
+    padding-bottom: 22px;
+}
+.contacts {
+    font-size: 16px;
+    font-weight: 400;
+}
+.welcome-card {
+    font-size: 56px;
+    width: 496px;
+    margin-bottom: 48px;
 }
 
 }
