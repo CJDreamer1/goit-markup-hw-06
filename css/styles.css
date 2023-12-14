@@ -958,6 +958,12 @@ body {
 .section-hedder {
     padding-top: 120px;
 }
+.footer-form {
+    flex-wrap: nowrap;
+}
+.footer-spreader-tablet {
+    display: flex;
+    flex-wrap: nowrap;
 }
 @media screen and (max-width: 1157px) {
     .advantage-picture {
