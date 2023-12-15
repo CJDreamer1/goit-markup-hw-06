@@ -878,9 +878,6 @@ body {
 .contacts-straight {
     display: inline-flex;
 }
-.container {
-    padding-right: 0;
-}
 .contacts {
     font-family: Roboto;
     font-size: 12px;
@@ -962,6 +959,28 @@ body {
 .footer-form {
     flex-wrap: nowrap;
 }
+.footer-subscribe-p {
+    text-align: left;
+}
+.subscribtion {
+    margin-left: 92px;
+}
+.footer-separator {
+    margin-left: 92px;
+    margin-right: 0;
+}
+.footer-links {
+    text-align: left;
+}
+.social-media-container {
+    margin-right: auto;
+    margin-left: 24px;
+    margin-bottom: 72px;
+}
+.footer-form {
+    gap: 24px;
+}
+
 }
 @media screen and (max-width: 1157px) {
     .advantage-picture {
@@ -1013,9 +1032,6 @@ body {
 .portfolio-list-item {
     width: 360px;
 }
-.portfolio-list {
-    column-gap: 24px;
-}
 .adress-container {
     display: flex;
     gap: 40px;
@@ -1032,5 +1048,17 @@ body {
     width: 496px;
     margin-bottom: 48px;
 }
+.team-card {
+    flex-wrap: nowrap;
+}
+.portfolio-list {
+    flex-wrap: wrap;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
 }
 /* ========================================== /DESKTOP HEADER STYLES ========================================== */
