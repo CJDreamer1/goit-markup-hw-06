@@ -653,10 +653,154 @@ body {
     flex-wrap: wrap;
     column-gap: 48px;
     row-gap: 48px;
+    margin-bottom: 96px;
 }
 .welcome-card {
     text-transform: capitalize;
 }
+.footer-background {
+    background: #2E2F42;
+    padding: 96px 0;
+}
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: baseline;
+}
+.footer-separator {
+    margin-right: auto;
+    margin-left: auto;
+    align-items: baseline;
+    margin-bottom: 72px;
+}
+.footer-separator {
+    margin-right: auto;
+    margin-left: auto;
+    align-items: baseline;
+    margin-bottom: 72px;
+}
+.footer-logo {
+    display: inline-block;
+    color: #4d5ae5;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+}
+.footer-studio {
+    color: #f4f4fd;
+}
+.footer-text {
+    color: #F4F4FD;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    max-width: 264px;
+}
+.social-media-container {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 72px;
+}
+.footer-paragraph {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+.footer-media-list {
+    display: flex;
+    gap: 16px;
+}
+.footer-list-element {
+    width: 40px;
+    height: 40px;
+}
+.footer-list-element-icon {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    fill: #F4F4FD;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-links-footer:hover,
+.social-links-footer:focus {
+    background-color: #31d0aa;
+}
+.footer-subscribe-p {
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+}
+.footer-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.footer-email-field-contents {
+    width: 288px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: #ffffff;
+}
+.footer-btn-subscribe {
+    display: flex;
+    min-width: 165px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #4D5AE5;
+    border: none;
+    border-radius: 4px;
+}
+.button-changing-color:hover,
+.button-changing-color:focus {
+    background-color: #404BBF;
+}
+
+.plane-button {
+    margin-left: 16px;
+}
+
+
+
+
+
 /* ========================================== /MOBILE HEADER STYLES ========================================== */
 @media screen and (min-width: 768px) {
 .container {
@@ -736,7 +880,6 @@ body {
 }
 .container {
     padding-right: 0;
-    padding-left: 0;
 }
 .contacts {
     font-family: Roboto;
@@ -776,6 +919,7 @@ body {
 
 .team-card {
     gap: 72px 24px;
+    padding-bottom: 96px;
 }
 .portfolio-list-item {
     width: 356px;
@@ -815,11 +959,9 @@ body {
     background-color: #F4F4FD;
     padding: 0;
 }
-.section-hedder {
-    padding-top: 120px;
-}
 .footer-form {
     flex-wrap: nowrap;
+}
 }
 @media screen and (max-width: 1157px) {
     .advantage-picture {
@@ -860,7 +1002,9 @@ body {
     font-size: 16px;
     font-weight: 400;
 }
-
+.section-hedder {
+    padding-top: 120px;
+}
 .advantages-items {
     font-weight: 500;
     font-size: 20px;
@@ -888,6 +1032,5 @@ body {
     width: 496px;
     margin-bottom: 48px;
 }
-
 }
 /* ========================================== /DESKTOP HEADER STYLES ========================================== */
