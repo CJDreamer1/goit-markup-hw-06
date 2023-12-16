@@ -56,7 +56,7 @@ body {
 }
 .mobile-menu-close-btn {
     position: absolute;
-    top: 24x;
+    top: 24px;
     right: 16px;
     padding: 0;
     background-color: #E7E9FC;
@@ -76,6 +76,7 @@ body {
     flex-direction: column;
     position: relative;
     top: 16px;
+    padding-top: 72px;
 }
 .mobile-menu {
     display: inline-flex;
@@ -196,6 +197,9 @@ body {
 .mobile-contacts-list-item:focus {
     color:#4D5AE5;
 }
+.mobile-number-color {
+    color: #4D5AE5;
+}
 .team-card {
     display: flex;
     flex-direction: column;
@@ -295,6 +299,9 @@ body {
     fill: #ffffff;
     background-color: #404BBF;
     border: 0;
+}
+.studio-color {
+    color: #404BBF;
 }
 .mobile-preview-form-descroption {
     color: var(--NAVY-BLUE, #2E2F42);
@@ -494,11 +501,9 @@ body {
     letter-spacing: 0.02em;
 }
 .width-restriction {
-    max-width: 288px;
-    margin-left: 16px;
-    margin-right: 17px;
-    padding-left: 17px;
-    padding-right: 16px;
+    max-width: 217px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 72px;
 }
 .button {
@@ -810,10 +815,15 @@ body {
 }
 /* ========================================== TABLET HEADER STYLES ========================================== */
 .page-header {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 11px;
+    padding-bottom: 11px;
     border-bottom: 1px solid #e7e9fc;
     background-color: #FFF;
+}
+.adress-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 .mobile-menu-open-btn {
     display:none;
@@ -891,10 +901,10 @@ body {
 .contacts {
     font-family: Roboto;
     font-size: 12px;
+    font-weight: 400;
     color: var(--SLATE, #434455);
     line-height: 1.5;
     letter-spacing: 0.02em;
-    text-transform: lowercase;
 }
 .header-underscore {
     border-bottom: 1px solid #e7e9fc;
@@ -998,7 +1008,12 @@ body {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/dt-bg.jpg);
     padding: 188px 0;
 }
-
+.page-header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e7e9fc;
+    background-color: #FFF;
+}
 @media screen and (min-resolution: 192dpi) {
     .welcome-card-background {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/dt-bg@2x.jpg);
@@ -1031,6 +1046,7 @@ body {
 }
 .adress-container {
     display: flex;
+    flex-direction: row;
     gap: 40px;
 }
 .contacts {
