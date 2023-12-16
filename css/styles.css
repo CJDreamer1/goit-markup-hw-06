@@ -82,10 +82,6 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: 40px;
-    padding-top: 72px;
-    padding-right: 153px;
-    padding-left: 16px;
-    padding-bottom: 168px;
 }
 
 /* ====/Common styles================================================================================== */
@@ -121,7 +117,6 @@ body {
     padding-bottom: 16px;
     border-bottom: 1px solid #e7e9fc;
     background-color: #FFF;
-
 }
 .div-container {
     display: flex;
@@ -136,7 +131,6 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-right: 120px;
 }
 @media screen and (max-width: 767px) {
 .mobile-menu-open-btn {
@@ -189,6 +183,7 @@ body {
     color: var(--SLATE, #434455);
     font-size: 20px;
     font-weight: 500;
+    font-style: normal;
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 48px;
@@ -214,8 +209,8 @@ body {
     gap: 40px;
 }
 .social-list-icon {
-    width: 24px;
-    height: 24px;
+    width: 16px;
+    height: 16px;
     fill: #F4F4FD;
     flex-shrink: 0;
 }
@@ -484,7 +479,6 @@ body {
     background-position: center;
     max-width: 1440px;
     margin: 0 auto;
-    margin-bottom: 96px;
 }
 @media screen and (min-resolution: 192dpi) {
 .welcome-card-background {
@@ -533,6 +527,7 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 120px;
 }
 .advantages-text {
     font-size: 16px;
@@ -553,7 +548,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 72px;
-    margin-bottom: 96px;
 }
 .section-hedder {
     color: #2e2f42;
@@ -563,8 +557,7 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     text-align: center;
-    padding-top: 96px;
-    margin-bottom: 72px;
+    padding-bottom: 72px;
 }
 .third-section {
     background-color: #F4F4FD;
@@ -635,6 +628,10 @@ body {
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.fourth-srction {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
 .card-text {
     color: #F4F4FD;
     font-size: 16px;
@@ -666,7 +663,6 @@ body {
     flex-wrap: wrap;
     column-gap: 48px;
     row-gap: 48px;
-    margin-bottom: 96px;
 }
 .welcome-card {
     text-transform: capitalize;
@@ -713,7 +709,7 @@ body {
 .social-media-container {
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 72px;
+
 }
 .footer-paragraph {
     font-weight: 500;
@@ -803,13 +799,22 @@ body {
 .plane-button {
     margin-left: 16px;
 }
-
+.advantages-list {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
 /* ========================================== /MOBILE HEADER STYLES ========================================== */
 @media screen and (min-width: 768px) {
 .container {
     max-width: 768px;
 }
 /* ========================================== TABLET HEADER STYLES ========================================== */
+.page-header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e7e9fc;
+    background-color: #FFF;
+}
 .mobile-menu-open-btn {
     display:none;
 }
@@ -870,6 +875,8 @@ body {
     padding-bottom: 0;
 }
 .welcome-card-background {
+    padding-top: 112px;
+    padding-bottom: 96px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/tablet-bg.jpg);
 }
 
@@ -897,13 +904,10 @@ body {
     width: 496px;
     margin-bottom: 36px;
 }
-.page-header {
-    padding-top: 0;
-    padding-bottom: 0;
+.advantages-items {
+    text-align: left;
 }
 .div-container {
-    margin-top: 24px;
-    padding-bottom: 16px;
     padding-left: 16px;
     padding-right: 16px;
 }
@@ -919,7 +923,6 @@ body {
 
 .team-card {
     gap: 72px 24px;
-    padding-bottom: 96px;
 }
 .portfolio-list-item {
     width: 356px;
@@ -952,12 +955,8 @@ body {
     padding-left: 0;
     padding-right: 0;
 }
-.ul-container {
-    margin-bottom: 120px;
-}
 .third-section {
     background-color: #F4F4FD;
-    padding: 0;
 }
 .footer-form {
     flex-wrap: nowrap;
@@ -965,20 +964,18 @@ body {
 .footer-subscribe-p {
     text-align: left;
 }
-.subscribtion {
-    margin-left: 92px;
-}
 .footer-separator {
-    margin-left: 92px;
     margin-right: 0;
+    margin-left: 0;
 }
 .footer-links {
     text-align: left;
+    max-width: 582px;
 }
 .social-media-container {
-    margin-right: auto;
-    margin-left: 24px;
-    margin-bottom: 72px;
+    padding-left: 24px;
+    margin-left: 0;
+
 }
 .footer-form {
     gap: 24px;
@@ -1024,9 +1021,6 @@ body {
     font-size: 16px;
     font-weight: 400;
 }
-.section-hedder {
-    padding-top: 120px;
-}
 .advantages-items {
     font-weight: 500;
     font-size: 20px;
@@ -1038,9 +1032,6 @@ body {
 .adress-container {
     display: flex;
     gap: 40px;
-}
-.div-container {
-    padding-bottom: 22px;
 }
 .contacts {
     font-size: 16px;
@@ -1063,20 +1054,17 @@ body {
     text-align: left;
     align-items: baseline;
 }
-.footer-text {
-    margin-right: 120px;
-}
 .footer-separator {
     margin-left: 0;
-    margin-right: 0;
+    margin-right: 120px;
+}
+.subscribtion {
+    padding-left: 80px;
 }
 .social-media-container {
     margin-right: 0;
     margin-left: 0;
-    margin-bottom: 72px;
-}
-.subscribtion {
-    margin-left: 80px;
+    margin-bottom: 0;
 }
 .container {
     margin-left: auto;
