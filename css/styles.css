@@ -686,7 +686,7 @@ body {
     margin-right: auto;
     margin-left: auto;
     align-items: baseline;
-    margin-bottom: 72px;
+    padding-bottom: 72px;
 }
 .footer-logo {
     display: inline-block;
@@ -749,6 +749,7 @@ body {
 }
 .footer-subscribe-p {
     margin-bottom: 16px;
+    padding-top: 72px;
     margin-left: auto;
     margin-right: auto;
     font-weight: 500;
@@ -972,6 +973,7 @@ body {
     flex-wrap: nowrap;
 }
 .footer-subscribe-p {
+    padding-top: 0;
     text-align: left;
 }
 .footer-separator {
@@ -1022,6 +1024,10 @@ body {
 .advantages-list-item {
     width: calc((100% - 72px) / 4);
 }
+.advantages-list {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 .advantage-picture {
     display: flex;
     align-items: center;
@@ -1040,6 +1046,11 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+}
+.third-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 }
 .portfolio-list-item {
     width: 360px;
@@ -1064,6 +1075,10 @@ body {
 .portfolio-list {
     flex-wrap: wrap;
 }
+.fourth-srction {
+    padding-top: 116px;
+    padding-bottom: 124px;
+}
 .footer-links {
     display: flex;
     flex-wrap: nowrap;
@@ -1086,6 +1101,9 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-
+.footer-background {
+    background: #2E2F42;
+    padding: 100px 0;
+}
 }
 /* ========================================== /DESKTOP HEADER STYLES ========================================== */
