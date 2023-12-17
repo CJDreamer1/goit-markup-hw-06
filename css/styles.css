@@ -686,7 +686,7 @@ body {
     margin-right: auto;
     margin-left: auto;
     align-items: baseline;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 .footer-logo {
     display: inline-block;
@@ -985,9 +985,7 @@ body {
     max-width: 582px;
 }
 .social-media-container {
-    padding-left: 24px;
-    margin-left: 0;
-
+    margin-left: 24px;
 }
 .footer-form {
     gap: 24px;
@@ -1087,6 +1085,7 @@ body {
 .footer-separator {
     margin-left: 0;
     margin-right: 120px;
+    margin-bottom: 0;
 }
 .subscribtion {
     padding-left: 80px;
